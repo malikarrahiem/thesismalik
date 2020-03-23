@@ -1,0 +1,102 @@
+## Data Source
+
+The boreholes contained in this apps are sourced from:
+
+1. 86 Boreholes from Bambang Sunarwan Ph.D Thesis (Sunarwan et al, 2014)
+
+2. 73 Boreholes from IWACO-WASECO (IWACO, 1990)
+
+3. 23 Boreholes from Department of Energy and Mineral Resources of West Java Province (2017-2018)
+
+4. 5 Boreholes from geotechnical drilling of Adrin Tohari, Geoteknologi LIPI (Tohari, Sari, and Syahbana 2016; Tohari, Soebowo, and Wibawa 2015)
+
+5. 2 Boreholes from M.A.C. Dam (DAM 1994; Dam 1997)
+
+Total	189 Boreholes
+
+The map contained in this apps are sourced from:
+
+1. Geological Map (Dam and Suparan, 1992)
+
+2. Hydrogeological Map (Soetrisno, 1983)
+
+3. Groundwater Basin of West Java (Dinas ESDM Provinsi Jawa Barat, 2019)
+
+4. Groundwater Zonation Status of West Java (Dinas ESDM Provinsi Jawa Barat, 2019)
+
+## Reference
+
+Appelhans, Tim, Florian Detsch, Christoph Reudenbach, and Stefan Woellauer. 2019. ‘Mapview: Interactive Viewing of Spatial Data in R’. https://CRAN.R-project.org/package=mapview.
+
+Appelhans, Tim, Kenton Russell, and Lorenzo Busetto. 2019. ‘Mapedit: Interactive Editing of Spatial Data in R’. https://CRAN.R-project.org/package=mapedit.
+
+Arizona Geological Survey. 2013. ‘The Geologic Map of Arizona’. WebMap. The Geologic Map of Arizona. 2013. http://data.azgs.az.gov/geologic-map-of-arizona/#.
+
+Bemmelen, R. W. van, and J Szemian. 1934. ‘Geologische Kaart van Java Blad 36, Bandoeng’. Batavia: Batavia : Topografische Dienst. https://digitalcollections.universiteitleiden.nl/view/item/813208.
+
+Bivand, Roger, Tim Keitt, and Barry Rowlingson. 2019. ‘Rgdal: Bindings for the “Geospatial” Data Abstraction Library’. https://CRAN.R-project.org/package=rgdal.
+
+Bivand, Roger, Edzer Pebesma, and Virgilio Gomez-Rubio. 2013. Applied Spatial   Data Analysis with R. 2nd ed. New York: Springer. http://www.asdar-book.org/.
+
+Braadbaart, Okke, and Frederick Braadbaart. 1997. ‘Policing the Urban Pumping Race: Industrial Groundwater Overexploitation in Indonesia’. World Development 25 (2): 199–210. https://doi.org/10.1016/S0305-750X(96)00102-7.
+
+Chamberlain, Scott, and Andy Teucher. 2019. ‘Geojsonio: Convert Data from and to “GeoJSON” or ’TopoJSON’. https://CRAN.R-project.org/package=geojsonio.
+
+Chang, Winston, and Barbara Borges Ribeiro. 2018. ‘Shinydashboard: Create Dashboards with “Shiny”’. https://CRAN.R-project.org/package=shinydashboard.
+
+Chang, Winston, Joe Cheng, J.J Allaire, Yihui Xie, and Jonathan McPherson. 2017. ‘Shiny: Web Application Framework for R’. https://CRAN.R-project.org/package=shiny.
+
+Cheng, Joe, Bhaskar Karambelkar, and Yihui Xie. 2019. ‘Leaflet: Create Interactive Web Maps with the JavaScript “Leaflet” Library’. https://CRAN.R-project.org/package=leaflet.
+
+DAM, M. A. C. 1994. ‘The Late Quaternary Evolution of the Bandung Basin, West Java, Indonesia’. Thesis VU Amsterdam. https://ci.nii.ac.jp/naid/10013487372/.
+
+Dam, M. A. C. 1997. The Late Quaternary Evolution of the Bandung Basin, West-Java, Indonesia. Bandung: Republic of Indonesia, Ministry of Mines and Energy, Directorate General of Geological and Mineral Resources, Geological Research and Development Centre.
+
+Dam, M. A. C, A Suhirman, and M Toloczyki. 1993. ‘Peat Geologi Lingkungan Untuk Tata Guna Lahan Dan Perencanaan Daerah Cekungan Bandung’. Thematic map. Bandung: Direktorat Geologi Tata Lingkungan.
+
+Dam, M. A. C., and P. Suparan. 1992. Geology of the Bandung Basin. Republic of Indonesia, Department of Mines and Energy, Directorate General of Geology and Mineral Resources, Geological Research and Development Centre.
+
+Hidayat, Muhamad Rizal, Undang Mardiana, Bombom R Suganda, and M Sapari Dwi Hadian. 2017. ‘GEOMETRI AKIFER DAERAH BANDUNG DAN SEKITARNYA, PROVINSI JAWA BARAT’, no. 01: 12.
+
+Hudoro, Humaryono. 1991. ‘Groundwater Flow Modeling of Bandung Aquifer (a Case Study)’.
+
+Hutasoit, Lambok. 2009. ‘Kondisi Permukaan Air Tanah dengan dan tanpa peresapan buatan di daerah Bandung: Hasil Simulasi Numerik’. Indonesian Journal on Geoscience. https://doi.org/10.17014/ijog.vol4no3.20093.
+
+IWACO. 1990. ‘West Java Provincial Water Sources Master Plan For Water Supply’. Vol. A: A Groundwater Resources. Jakarta: Direktorat Gen. Cipta Karya.
+
+Junghuhn, Franz. 1855. ‘Kaart van bei Eiland Java’. https://upload.wikimedia.org/wikipedia/commons/2/22/Kaart_van_het_eiland_Java_-_Geologische_Ausgabe.jpg.
+
+Koesoemadinata, R.P, and D Hartono. 1981. ‘Stratigrafi Dan Sedimentasi Daerah Bandung’. In Ikatan Ahli Geologi Indonesia, 23 pp. Bandung.
+
+Pebesma, Edzer, and Roger Bivand. 2005. ‘Classes and Methods for Spatial Data in R’. https://cran.r-project.org/doc/Rnews/.
+
+Pulawski, Bogdan, and Hans Øbro. 1976. ‘Groundwater Study of a Volcanic Area near Bandung, Java, Indonesia’. Journal of Hydrology 28 (1): 53–72.
+
+Silitonga, P.H. 1973. ‘Peta Geologi Lembar Bandung’. Bandung: Direktorat Geologi, Dinas Pertambangan Republik Indonesia.
+
+Soetrisno. 1983. ‘Peta Hidrogeologi Indonesia Lembar Bandung’. Bandung: Direktorat Geologi Tata Lingkungan.
+
+Suhari, S., and M. Siebenhüner. 1993. ‘Environmental Geology for Land Use and Regional Planning in the Bandung Basin, West Java, Indonesia’. Journal of Southeast Asian Earth Sciences, Seventh Regional Congress on Geology, Mineral and Energy Resources of Southeast Asia, 8 (1): 557–66. https://doi.org/10.1016/0743-9547(93)90053-R.
+
+Sunarwan, Bambang, Deny Juanda Puradimaja, Sudarto Notosiswoyo, and I. A. Sadisun. 2014. ‘Hidrostratigrafi CAT Bandung-Soreang Berdasarkan Parameter Hidrolik, Hidrokimia, Dan Isotop Stabil’. Bandung: Institut Teknologi Bandung.
+
+Suparan, P., and M. A. C Dam. 1992. ‘Peta Geologi Kuarter Cekungan Bandung’. Thematic map. Bandung: Geological Research & Development Centre.
+
+Tohari, Adrin, Anggun Mayang Sari, and Arifan Jaya Syahbana. 2016. ‘KETEBALAN LAPISAN TANAH LUNAK DI WILAYAH CEKUNGAN BANDUNG BERDASARKAN METODE MIKROTREMOR’, 14.
+
+Tohari, Adrin, Eko Soebowo, and Sunarya Wibawa. 2015. ‘Sub-Surface Engineering Geology Of Bandung Basin (Gedebage – Bojongsoang – Solokanjeruk – Majalaya Section)’, 12.
+
+Wangsaatmaja, Setiawan, Arief D Sutadian, and Maria A N Prasetiati. 2006. ‘A Review of Groundwater Issues in the Bandung Basin, Indonesia: Management and Recommendations’ 6 (2): 17.
+
+Wickham, Hadley. 2016. Ggplot2: Elegant Graphics for Data Analysis. New York: Springer-Verlag New York. https://ggplot2.tidyverse.org.
+
+Wickham, Hadley. 2017. ‘Tidyverse: Easily Install and Load the “Tidyverse”.’ https://CRAN.R-project.org/package=tidyverse.
+
+Wickham, Hadley. 2020. ‘Mastering Shiny’. Bookdown website. Mastering Shiny. 2020. https://mastering-shiny.org/.
+
+Wickham, Hadley, Romain Francois, Lionel Henry, and Kirril Müller. 2019. ‘Dplyr: A Grammar of Data Manipulation’. https://CRAN.R-project.org/package=dplyr.
+
+Yondri, Lutfi. 2005. ‘Yondri, Lutfi. "Kubur Prasejarah Temuan Dari Gua Pawon Desa Gunung Masigit, Kabupaten Bandung Provisini Jawa Barat: Sumbangan Data Bagi Kehidupan Prasejarah Di Sekitar Tepian Danau Bandung Purba’. Jakarta: Universitas Indonesia.
+
+
+
