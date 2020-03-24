@@ -1,0 +1,117 @@
+---
+title: "User-Defined Cross-Section Application"
+author: "Muhammad Malik Ar Rahiem"
+date: "3/24/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo = FALSE}
+library(mapedit)
+library(leaflet)
+library(mapview)
+library(tidyverse)
+library(sf)
+
+url <- "https://raw.githubusercontent.com/malikarrahiem/thesismalik/master/Complete_Logs.csv?token=AMDKGMXFOOP6CAQ4JJ2OJXS6ODU6A"
+Logs <- read.csv(url, header = TRUE)
+
+Warna <- c("Andesit" = "red4", "TanahPenutup" = "peru", 
+           "Tufa" = "darkorange", "Pasir" = "yellow2", 
+           "Lempung" = "forestgreen", "Screen" = "blue",
+           "Breksi" = "chocolate4", "Kerikil" = "yellow",
+           "Lava" = "red1")
+
+url <- "https://raw.githubusercontent.com/malikarrahiem/thesismalik/master/Complete_Logs.csv?token=AMDKGMXFOOP6CAQ4JJ2OJXS6ODU6A"
+Logs <- read.csv(url, header = TRUE)
+
+datamap <- selectMap(
+  leaflet(Logs) %>%
+    addTiles() %>%
+    addCircleMarkers(data = Logs, 
+                                      ~Longitude, ~Latitude, 
+                                      layerId = ~KodeSumur, 
+                                      popup = ~KodeSumur, 
+                                      radius = 5, 
+                                      weight= 5,
+                                      stroke = TRUE,
+                                      label = ~KodeSumur,
+                                      color = 'navy',
+                                      group = "Wells")
+)
+
+datamap
+
+```
+
+## User Defined Cross Section Application
+
+This is the function that is not yet available in the apps due to the incompatibility between the packages behind this function. The function can be used to plot a well cross section that pass through any points that are selected by user. User can select any points, afterward save it and shows it as a cross section. Similar to the function of Predefined Well Cross-Section, but in this case, the points are user-defined. 
+
+```{r User-Defined Cross Section, echo=}
+
+PlotGrafik <- function(x){
+  WS <- x %>% 
+    dplyr::select(KodeSumur, TopElev, BotElev, Screen) %>% 
+    filter(Screen == "Screen")
+  
+  if(dim(WS)[1] == 0) {
+    ggplot()+
+      geom_rect(data = x,
+                mapping = aes(xmin=BotElev, xmax=TopElev, 
+                              ymin=0, ymax= 50,
+                              colour="grey",
+                              weight = 0.2,
+                              fill=NA))+
+      scale_color_manual(values=c('grey'),
+                         guide=FALSE)+
+      geom_rect(data = x, 
+                mapping = aes(xmin=BotElev, xmax=TopElev, 
+                              ymin=0, ymax= 50, fill= KodeLito))+
+      facet_wrap(~KodeSumur, ncol = 10)+
+      geom_line(data= x, mapping = aes(x= TopElev, y= R))+
+      theme_bw()+ 
+      coord_flip()+
+      scale_y_continuous(, limits=c(-10,150))+
+      scale_fill_manual(values = Warna)+
+      labs(x = "Elevation (masl)" , y = "Resistivity (Ohm.m)", fill = "Legend")+
+      theme(legend.position = "bottom")+
+      guides(fill = guide_legend(nrow = 1))
+    
+  } else {
+    ggplot()+
+      geom_rect(data = x,
+                mapping = aes(xmin=BotElev, xmax=TopElev, 
+                              ymin=0, ymax= 50,
+                              colour="grey",
+                              weight = 0.2,
+                              fill=NA))+
+      scale_color_manual(values=c('grey'),
+                         guide=FALSE)+
+      geom_rect(data = WS, 
+                mapping = aes(xmin=BotElev, xmax=TopElev, 
+                              ymin=-5, ymax= 55, fill= Screen))+
+      geom_rect(data = x, 
+                mapping = aes(xmin=BotElev, xmax=TopElev, 
+                              ymin=0, ymax= 50, fill= KodeLito))+
+      facet_wrap(~KodeSumur, ncol = 10)+
+      geom_line(data= x, mapping = aes(x= TopElev, y= R))+
+      theme_bw()+ 
+      coord_flip()+
+      scale_y_continuous(, limits=c(-10,150))+
+      scale_fill_manual(values = Warna)+
+      labs(x = "Elevation (masl)" , y = "Resistivity (Ohm.m)", fill = "Legend")+
+      theme(legend.position = "bottom")+
+      guides(fill = guide_legend(nrow = 1))
+  }
+}
+
+PlotPenampang <- function (x){
+  KodeSumur2 <- datamap$id
+  x <- Logs[Logs$KodeSumur %in% KodeSumur2,] %>% 
+    mutate(KodeSumur=factor(KodeSumur, levels = datamap$id)) %>% 
+    arrange(KodeSumur)
+  PlotGrafik(x)
+}
+
+PlotPenampang(datamap)
+```
