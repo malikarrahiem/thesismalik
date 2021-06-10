@@ -6,6 +6,7 @@ This application compiles available well-data in Bandung Basin from several sour
 This application is meant to democratise subsurface data in Bandung Basin to encourage open data so that further research, especially on groundwater management can be taken place. This is also an effort to promote open science. The data that is being used in this application are provided for public in online repositories Github and so does the script code. This application of subsurface visualisation is expected to encourage open data, open science, and later further research on subsurface model development, especially on more transparent groundwater management.
 
 The apps can be accessed from https://malikarrahiem.shinyapps.io/BandungBasin/
+
 The repository can be accessed from https://github.com/malikarrahiem/thesismalik
 
 Keyword: groundwater, application, open data, visualisation
