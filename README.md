@@ -7,6 +7,8 @@ This application is meant to democratise subsurface data in Bandung Basin to enc
 
 The apps can be accessed from https://malikarrahiem.shinyapps.io/BandungBasin/
 
+The thesis can be accessed from https://github.com/malikarrahiem/thesismalik/blob/master/2321114_Ar_Rahiem_Master_Thesis.pdf
+
 The repository can be accessed from https://github.com/malikarrahiem/thesismalik
 
 Keyword: groundwater, application, open data, visualisation
